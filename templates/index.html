@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Disease Prediction Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Disease Prediction Chatbot</h1>
+    <div class="chatbox" id="chatbox"></div>
+    <input type="text" id="userInput" placeholder="Enter your symptoms..." />
+    <button onclick="sendMessage()">Send</button>
+    <button onclick="startVoiceInput()">🎤 Voice</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
