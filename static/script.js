@@ -8,7 +8,7 @@ function sendMessage() {
   chatbox.innerHTML += `<div><b>You:</b> ${message}</div>`;
 
   // Send message to backend using key "message" (to match app.py)
-  fetch("http://127.0.0.1:5000/predict", {
+  fetch("https://disease-prediction-chatbot-4fcn.onrender.com/predict", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ message: message })  // fixed key name
